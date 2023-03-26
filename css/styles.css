@@ -16,24 +16,75 @@
   --primary-heading-color: #2e2f42;
   --web-color: #4d5ae5;
 }
+/* --------------------------------------body  */
 
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
+
+button {
+  cursor: pointer;
+}
 a {
+  display: block;
+  margin: 0;
+  padding: 0;
   text-decoration: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* ----------------------container */
+.container {
+  max-width: 1440px;
+  outline: 2px solid red;
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: o auto;
+}
+/* ----------------------section */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/* ---------------------------header */
+.flex-header {
+  display: flex;
+  /* align-content: center; */
+}
+
 .header {
 }
 .header-navigation {
+  display: flex;
+  /* align-content: center; */
 }
 
 .header-logo {
+  padding-top: 25.5px;
+  padding-bottom: 25.5px;
+  margin-left: 156px;
+  margin-right: 76px;
+
   color: var(--second-text-color);
 
   font-family: var(--logo-font);
@@ -59,7 +110,6 @@ a {
   text-transform: uppercase;
 }
 .header-logo {
-  letter-spacing: 0.03em;
 }
 .list {
   list-style: none;
@@ -75,10 +125,17 @@ a {
 }
 
 .header-list {
+  display: flex;
 }
-.header-item {
+.header-item:not(:last-child) {
+  margin-right: 40px;
 }
+/* .header-list .header-item:last-child {
+  margin-right: 0;
+} */
 .header-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
   text-decoration: none;
   color: var(--second-text-color);
   font-family: inherit;
@@ -97,16 +154,24 @@ a {
 }
 
 .address {
+  margin-left: auto;
+  margin-right: 156px;
   font-style: normal;
 }
 .address-list {
+  display: flex;
 }
 .address-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 .address-item {
+}
+.address-item:not(:last-child) {
+  margin-right: 40px;
 }
 .address-mail,
 .address-phone {
@@ -117,6 +182,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* --------------------------main */
 .main {
 }
 .main-section {
@@ -149,6 +215,7 @@ a {
 .main-btn:focus {
   background-color: #404bbf;
 }
+/* ---------------------------------features */
 .features {
 }
 .section-heading {
@@ -176,10 +243,12 @@ a {
 
   letter-spacing: 0.02em;
 }
+/* -------------------------------working */
 .working {
 }
 .working-list {
 }
+/* --------------------------------team */
 .team {
   background-color: var(--third-color);
 }
@@ -295,4 +364,18 @@ a {
   color: #404bbf;
 }
 .web {
+}
+/* ------------------visually-hidden  */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
