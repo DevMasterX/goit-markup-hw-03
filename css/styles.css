@@ -113,8 +113,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.header-logo {
-}
+
 .list {
   list-style: none;
 }
@@ -122,7 +121,7 @@ img {
   text-decoration: none;
 }
 .link:hover {
-  colcolor: #404bbf;
+  color: #404bbf;
 }
 .link:focus {
   color: #404bbf;
@@ -172,8 +171,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.address-item {
-}
+
 .address-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -187,8 +185,7 @@ img {
   letter-spacing: 0.02em;
 }
 /* ------------------------  - - --------main */
-.main {
-}
+
 .main-section {
   text-align: center;
   background-color: var(--second-color);
@@ -307,7 +304,12 @@ img {
   background-color: var(--second-color);
 }
 .footer-logo {
-  font-family: var(--logo-font);
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  margin-bottom: 17.5px;
+
+  /* font-family: var(--logo-font);
 
   font-weight: 800;
   font-size: 18px;
@@ -317,16 +319,22 @@ img {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--third-color);
+  color: var(--third-color); */
 }
 .footer-text {
-  line-height: 1.5;
+  /* display: inline-block; */
+  width: 264px;
 
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--third-color);
 }
 .footer-web {
   color: #f4f4fd;
+}
+.footer-wrap {
+  padding-top: 101.5px;
+  padding-bottom: 100px;
 }
 /* ----------------------PORTFOLIO */
 .filter-btn {
