@@ -266,12 +266,15 @@ img {
 .working {
 }
 .working-list {
+  display: flex;
+  gap: 24px;
 }
 /* --------------------------------team */
 .team {
   background-color: var(--third-color);
 }
 .section-heading {
+  margin-bottom: 72px;
   color: var(--second-text-color);
 }
 .team-list {
