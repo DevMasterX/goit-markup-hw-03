@@ -58,7 +58,7 @@ img {
 .container {
   /* max-width: 1158px; */
   width: 1158px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 
   padding: 0 15px;
   margin: 0 auto;
@@ -353,7 +353,17 @@ img {
   padding-bottom: 100px;
 }
 /* ----------------------PORTFOLIO */
+.portfolio-section {
+  padding-top: 96px;
+}
+.filter {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
 .filter-btn {
+  padding: 12px 24px;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.5;
@@ -365,6 +375,8 @@ img {
   color: #4d5ae5;
   background-color: var(--third-color);
   cursor: pointer;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .filter-btn:hover {
   color: var(--primary-white-color);
@@ -375,14 +387,29 @@ img {
   color: #ffffff;
   background-color: #404bbf;
 }
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.services-item {
+  /* border: 1px solid #e7e9fc; */
+  /* flex-basis: calc((100%-2 * 24px) / 3); */
+}
+.card-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .services-link .list-title {
   font-family: inherit;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1, 2;
-
+  line-height: 1.2;
   letter-spacing: 0.02em;
-
   color: var(--second-text-color);
 }
 .services-link .list-text {
