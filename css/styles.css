@@ -69,6 +69,7 @@ img {
 /* ---------------------------header */
 .flex-header {
   display: flex;
+  padding: 0;
   /* align-content: center; */
 }
 
