@@ -104,14 +104,14 @@ img {
 .web {
   color: var(--second-text-color);
 
-  font-family: 'Raleway';
+  /* font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   align-items: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  text-transform: uppercase; */
 }
 
 .list {
@@ -222,6 +222,7 @@ img {
   align-items: center;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: none;
 }
 .main-btn:hover {
   background-color: #404bbf;
@@ -230,8 +231,7 @@ img {
   background-color: #404bbf;
 }
 /* ---------------------------------features */
-.features {
-}
+
 .section-heading {
   font-weight: 700;
   font-size: 36px;
@@ -262,8 +262,7 @@ img {
   letter-spacing: 0.02em;
 }
 /* -------------------------------working */
-.working {
-}
+
 .working.section {
   padding-top: 0;
 }
@@ -294,8 +293,8 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item .list-title {
-  margin-top: 32px;
+.team-title {
+  /* margin-top: 32px; */
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2px;
@@ -304,19 +303,22 @@ img {
   text-align: center;
 }
 
-.team-item .list-text {
-  margin-bottom: 32px;
+.team-job {
+  /* margin-bottom: 32px; */
   line-height: 1.5;
 
   letter-spacing: 0.02em;
   text-align: center;
 }
-
+.team-card {
+  padding: 32px;
+}
 .team-item .list-title {
   line-height: 1.2;
 }
 /* ----------------------FOOTER */
 .footer {
+  padding: 100px 0;
   background-color: var(--second-color);
 }
 .footer-logo {
@@ -349,8 +351,8 @@ img {
   color: #f4f4fd;
 }
 .footer-wrap {
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  /* padding-top: 101.5px;
+  padding-bottom: 100px; */
 }
 /* ----------------------PORTFOLIO */
 .portfolio-section {
@@ -390,12 +392,9 @@ img {
 .services-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
 }
-.services-item {
-  /* border: 1px solid #e7e9fc; */
-  /* flex-basis: calc((100%-2 * 24px) / 3); */
-}
+
 .card-text {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -436,8 +435,7 @@ img {
 .link:hover {
   color: #404bbf;
 }
-.web {
-}
+
 /* ------------------visually-hidden  */
 .visually-hidden {
   position: absolute;
